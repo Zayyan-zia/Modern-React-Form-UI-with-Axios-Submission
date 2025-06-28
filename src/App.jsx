@@ -17,7 +17,7 @@ function App(){
   const Btn=(e)=>{
     setloader(<Loader/>)
     e.preventDefault();
-    axios.post('/api/submit-data',page)
+    axios.post(your_routes,page)
     .then((res)=>{
       setloader('');
           setres(res.data);
